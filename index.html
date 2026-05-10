@@ -3,135 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页 | 南昌大学</title>
+    <title>Homepage</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Microsoft Yahei", SimSun, serif;
-        }
         body {
-            background-color: #f5f5f5;
-            line-height: 1.8;
-            color: #333;
-        }
-        .container {
-            width: 1000px;
-            margin: 30px auto;
-            background: #fff;
-            padding: 40px 50px;
-            box-shadow: 0 0 10px #ddd;
+            font-family: Georgia, "Times New Roman", serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 30px;
+            line-height: 1.65;
+            color: #222;
+            background-color: #fff;
         }
         .header {
-            text-align: center;
-            border-bottom: 2px solid #00529B;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        .header h1 {
-            color: #00529B;
-            font-size: 28px;
-            margin-bottom: 8px;
-        }
-        .header p {
-            font-size: 16px;
-            color: #666;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section h2 {
-            font-size: 20px;
-            color: #00529B;
-            border-left: 4px solid #00529B;
-            padding-left: 12px;
-            margin-bottom: 15px;
-        }
-        .section p, .section li {
-            font-size: 15px;
-            margin-bottom: 8px;
-        }
-        ul {
-            padding-left: 25px;
-        }
-        .info-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+        .avatar img {
+            width: 130px;
+            height: 170px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+        .info h1 {
+            font-size: 26px;
+            margin: 0 0 8px 0;
+            font-weight: normal;
+        }
+        .info p {
+            margin: 4px 0;
+            font-size: 16px;
+        }
+        a {
+            color: #0055aa;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 35px 0 15px 0;
+            font-weight: normal;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 0 0 15px 0;
+        }
+        li {
             margin-bottom: 10px;
         }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #999;
-            font-size: 14px;
+        .pub-item {
+            margin-bottom: 12px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- 头部基本信息 -->
-        <div class="header">
-            <h1>姓名</h1>
-            <p>南昌大学 | 计算机科学与技术学院 | 教师</p>
-        </div>
 
-        <!-- 基本信息 -->
-        <div class="section">
-            <h2>基本信息</h2>
-            <div class="info-row">
-                <p><strong>职称：</strong>教师</p>
-                <p><strong>邮箱：</strong>xxx@ncu.edu.cn</p>
-            </div>
-            <div class="info-row">
-                <p><strong>研究方向：</strong>计算机视觉、医学影像智能分析、机器学习、糖尿病视网膜病变分级、低剂量CT去噪</p>
-            </div>
-        </div>
-
-        <!-- 教育经历 -->
-        <div class="section">
-            <h2>教育经历</h2>
-            <ul>
-                <li>xxxx.xx - xxxx.xx  某某大学  某某专业  博士</li>
-                <li>xxxx.xx - xxxx.xx  某某大学  某某专业  硕士</li>
-                <li>xxxx.xx - xxxx.xx  某某大学  某某专业  本科</li>
-            </ul>
-        </div>
-
-        <!-- 研究方向 -->
-        <div class="section">
-            <h2>主要研究方向</h2>
-            <ul>
-                <li>计算机视觉与深度学习</li>
-                <li>医学影像智能分析与处理</li>
-                <li>糖尿病视网膜病变智能分级</li>
-                <li>脑肿瘤分割、低剂量CT图像去噪</li>
-                <li>域泛化、小样本医学图像学习</li>
-            </ul>
-        </div>
-
-        <!-- 科研成果 -->
-        <div class="section">
-            <h2>科研成果</h2>
-            <p>主要从事计算机视觉、医学影像智能分析相关研究，在国内外SCI期刊、会议发表学术论文多篇；主持/参与省部级、校级科研项目多项；指导本科生、研究生参与学科竞赛与科研创新项目。</p>
-        </div>
-
-        <!-- 教学工作 -->
-        <div class="section">
-            <h2>教学工作</h2>
-            <ul>
-                <li>承担本科生、研究生相关课程教学工作</li>
-                <li>指导本科生毕业设计、学科竞赛及科研训练</li>
-            </ul>
-        </div>
-
-        <!-- 底部 -->
-        <footer>
-            © 2025 个人学术主页 | 南昌大学
-        </footer>
+<!-- 头部：头像+个人信息 -->
+<div class="header">
+    <div class="avatar">
+        <!-- 可替换成你的头像图片链接 -->
+        <img src="https://yqfang9199.github.io/photo.jpg" alt="avatar">
     </div>
+    <div class="info">
+        <h1>你的姓名</h1>
+        <p>Teacher</p>
+        <p>School of Computer Science and Technology</p>
+        <p>Nanchang University</p>
+        <p>Email: xxx@ncu.edu.cn</p>
+        <p>
+            <a href="#">Google Scholar</a> / 
+            <a href="#">GitHub</a> / 
+            <a href="#">ORCID</a>
+        </p>
+    </div>
+</div>
+
+<!-- 个人简介 -->
+<h2>Biography</h2>
+<p>I am currently a teacher at the School of Computer Science and Technology, Nanchang University. 
+My research interests include computer vision, medical image analysis, deep learning, 
+diabetic retinopathy grading, low-dose CT denoising, and domain generalization.</p>
+
+<!-- 研究方向 -->
+<h2>Research Interests</h2>
+<ul>
+    <li>Computer Vision & Deep Learning</li>
+    <li>Medical Image Intelligent Analysis</li>
+    <li>Diabetic Retinopathy Grading</li>
+    <li>Brain Tumor Segmentation</li>
+    <li>Low-dose CT Image Denoising</li>
+    <li>Domain Generalization & Small Sample Learning</li>
+</ul>
+
+<!-- 教育经历 -->
+<h2>Education</h2>
+<ul>
+    <li>20XX.XX - 20XX.XX &nbsp; Ph.D., XXX University</li>
+    <li>20XX.XX - 20XX.XX &nbsp; M.S., XXX University</li>
+    <li>20XX.XX - 20XX.XX &nbsp; B.S., XXX University</li>
+</ul>
+
+<!-- 发表论文 -->
+<h2>Publications</h2>
+<div class="pub-item">
+    Paper Title, Author List, Journal/Conference, Year.
+</div>
+<div class="pub-item">
+    Paper Title, Author List, Journal/Conference, Year.
+</div>
+
+<!-- 教学工作 -->
+<h2>Teaching</h2>
+<ul>
+    <li>Undergraduate and postgraduate courses on computer science and artificial intelligence</li>
+    <li>Supervision of undergraduate graduation projects and student competitions</li>
+</ul>
+
 </body>
 </html>
